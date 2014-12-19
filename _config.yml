@@ -1,0 +1,14 @@
+# Site settings
+title: Pollinate
+email: info@codingcoop.org
+description: "Pollinate files with data to create a fertilized seed!"
+baseurl: "/"
+url: "http://pollinate.xyz"
+
+author:
+  name: "The Coding Cooperative"
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
+
