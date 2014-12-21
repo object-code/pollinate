@@ -113,3 +113,9 @@ header .nav > a:hover {
 .eighth-width     { width: 12.5%; }
 
 .border-center { margin: 0 auto; }
+
+.markdown-body {
+  max-width: 790px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
