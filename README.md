@@ -30,9 +30,9 @@ take its place. The `Flower` also supplies its own default data object.
 
 #### The `Pollen`
 
-The `Pollen` is pretty much just a vessel to get the data to the `Flower`. Much
-like how pollen works in nature. It can be supplied as an HTTP JSON endpoint or
-as a local file.
+The `Pollen` is pretty much just a vessel to get new data to the `Flower`. Much
+like how pollen works in nature. It can be supplied as an HTTP JSON endpoint, as
+a local file, or directly as a set of arguments.
 
 #### The Data
 
