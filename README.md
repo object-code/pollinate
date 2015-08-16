@@ -24,8 +24,9 @@ ensure that the process is as quick and efficient as possible.
 #### The `Flower`
 
 The `Flower` is a GitHub repository which holds all of the files.  Any file can
-contain template tags that will later be filled in with values. The `Flower` has
-the option of supplying its own default data object.
+can be passed through a template engine using the supplied data. Some files like
+the original README may need to go, and maybe a new templated README will need to 
+take its place. The `Flower` also supplies its own default data object.
 
 #### The `Pollen`
 
