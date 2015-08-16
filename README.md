@@ -42,7 +42,7 @@ objects. The data supplies a list of files to act upon with the template engine
 along with the data to inject. The data can also supply file operations to move
 or delete files during the process.
 
-## A Example
+## An Example
 
 Suppose someone built a `Flower` designed to start a building a project using
 [MEANstack](http://mean.io). They set it up so that development can occur within
