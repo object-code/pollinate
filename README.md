@@ -8,19 +8,6 @@ together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later you
 can **pollinate** them using an object of data.
 
-#### What exactly is this project attempting to accompish?
-
-Pollinate aims to be a simple to understand process for templating file trees to
-meet a specific and repeatable purpose. The idea is to design your templates to
-have subtle points of variation that can be defined within an object of data.
-You would define which files to `discard`, which files to `parse` for template
-tags, and which files to `move` to new names or paths.
-
-Pollinate will allow you to store your templates on GitHub and chip away at them
-over time. This process will enable you to benefit from open-source communities
-which share similar goals. When you need to use a template Pollinate aims to 
-ensure that the process is as quick and efficient as possible.
-
 #### The `Flower`
 
 The `Flower` is a GitHub repository which holds all of the files.  Any file can
@@ -43,21 +30,6 @@ along with the data to inject. The data can also supply file operations to move
 or delete files during the process.
 
 ## An Example
-
-Suppose someone built a `Flower` designed to start a building a project using
-[MEANstack](http://mean.io). They set it up so that development can occur within
-a [Vagrant](https://www.vagrantup.com/) box and configure the files so that all
-the dependencies like [MongoDB](http://www.mongodb.org/) are automatically
-installed using [Salt](http://www.saltstack.com/). In that `Flower` there are a
-few files where details need to be filled in and a couple files that need to
-move around. It is likely that the original README.md file would provide context
-that is no longer needed after parsing, so that would need to go.
-
-Some other wonderful person builds a simple service that enables the ability to
-submit that `Flower`. The service offers a lovely UI to choose the `Flower` and
-convert custom options into a JSON object that is offered up via a unique hash.
-You come along and pick the very same `Flower` to use. You are offered up a
-string to copy and paste it into a terminal with Node.js running, and voila!
 
 ```
 $ pollinate codingcoop/test-flower test.json
