@@ -87,7 +87,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
 ```
 {
   "name": "newproject",
-  "details": {
+  "context": {
     "box_name": "precise64",
     "box_url": "http://files.vagrantup.com/precise64.box"
   },
@@ -112,7 +112,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
 ```
 {
   "name": "codingcoop",
-  "details": {
+  "context": {
     "box_name": "trusty64",
     "box_url": "http://files.vagrantup.com/trusty64.box"
   }
@@ -124,7 +124,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
 ```
 {
   "name": "codingcoop",
-  "details": {
+  "context": {
     "box_name": "trusty64",
     "box_url": "http://files.vagrantup.com/trusty64.box"
   },
