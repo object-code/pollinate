@@ -60,7 +60,7 @@ You come along and pick the very same `Flower` to use. You are offered up a
 string to copy and paste it into a terminal with Node.js running, and voila!
 
 ```
-$ pollinate codingcoop/meanstack https://example.com/1bdDlXc
+$ pollinate codingcoop/test-flower test.json
 ```
 
 ##### The `Flower` repository
@@ -70,16 +70,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
 ├── PROJECT-README
 ├── README.md
 ├── Vagrantfile
-├── app
-    ...
-├── bower.json
-├── gruntfile.js
-├── package.json
-├── public
-    ...
-├── salt
-    ...
-└── flower.hjson
+└── flower.json
 ```
 
 ##### The object within the `Flower`
@@ -93,15 +84,15 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
   },
   "operations": {
     "discard": [
-      "README.md"
+      "README.md",
+      "LICENSE"
     ],
     "parse": [
       "PROJECT-README",
       "Vagrantfile"
     ],
     "move": [
-     { "PROJECT-README": "README.md" },
-     { "app": "{{name}}-app" }
+     { "PROJECT-README": "README.md" }
     ]
   }
 }
@@ -130,15 +121,15 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
   },
   "operations": {
     "discard": [
-      "README.md"
+      "README.md",
+      "LICENSE"
     ],
     "parse": [
       "Vagrantfile",
       "PROJECT-README"
     ],
     move: [
-     { "PROJECT-README": "README.md" },
-     { "app": "codingcoop-app" }
+     { "PROJECT-README": "README.md" }
     ]
   }
 }
@@ -150,16 +141,7 @@ $ pollinate codingcoop/meanstack https://example.com/1bdDlXc
 .
 └── codingcoop
    ├── README.md
-   ├── Vagrantfile
-   ├── codingcoop-app
-       ...
-   ├── bower.json
-   ├── gruntfile.js
-   ├── package.json
-   ├── public
-       ...
-   └── salt
-       ...
+   └── Vagrantfile
 ```
 
 (Don't forget to jump into the directory)
