@@ -10,6 +10,7 @@
    Pull requests are ALWAYS welcome, even if just amounts to a conversation.  */
 
 var program = require('commander')
+var co = require('co')
 
 program
   .version(require('../package.json').version)
@@ -31,6 +32,8 @@ if(program.args.length < 1) {
   process.exit(1)
 }
 
-require('../lib/fetch.js')(program.args).then(function(state) {
-    console.log(state)
-})
+co(function* () { return program.args })
+    .then(require('../lib/fetch.js'))
+        .then(co.wrap(function* (state) {
+            console.log(state)
+        }))

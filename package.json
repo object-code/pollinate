@@ -11,13 +11,12 @@
   "repository": "codingcoop/pollinate",
   "dependencies": {
     "co": "^4.6.0",
-    "co-fs": "^1.2.0",
     "commander": "^2.9.0",
-    "duo-package": "^0.10.3",
     "extend": "^3.0.0",
     "mime-types": "^2.1.9",
     "normalize-log": "^1.0.0",
     "nunjucks": "^2.3.0",
+    "promise": "^7.1.1",
     "request": "^2.69.0",
     "url-regex": "^3.1.0",
     "uuid": "^2.0.1"
