@@ -32,14 +32,12 @@ if(program.args.length < 1) {
   process.exit(1)
 }
 
-var state = {}
-
-state = require('../lib/fetch.js')(program.args)
-
-state = require('../lib/validate.js')(state)
-
-state = require('../lib/fertilize.js')(state)
-
-state = require('../lib/cleanup.js')(state)
-
-console.log(state)
+require('../lib/move.js')(
+    require('../lib/parse.js')(
+        require('../lib/discard.js')(
+            require('../lib/extend.js')(
+                require('../lib/fetch.js')(program.args)
+            )
+        )
+    )
+)
