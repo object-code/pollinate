@@ -10,7 +10,6 @@
    Pull requests are ALWAYS welcome, even if just amounts to a conversation.  */
 
 var program = require('commander')
-var chalk = require('chalk')
 
 program
   .version(require('../package.json').version)
@@ -32,12 +31,6 @@ if(program.args.length < 1) {
   process.exit(1)
 }
 
-require('../lib/move.js')(
-    require('../lib/parse.js')(
-        require('../lib/discard.js')(
-            require('../lib/extend.js')(
-                require('../lib/fetch.js')(program.args)
-            )
-        )
-    )
-)
+require('../lib/fetch.js')(program.args).then(function(state) {
+    console.log(state)
+})

@@ -10,7 +10,8 @@
   "license": "Unlicence",
   "repository": "codingcoop/pollinate",
   "dependencies": {
-    "chalk": "^1.1.1",
+    "co": "^4.6.0",
+    "co-fs": "^1.2.0",
     "commander": "^2.9.0",
     "duo-package": "^0.10.3",
     "extend": "^3.0.0",
@@ -18,7 +19,8 @@
     "normalize-log": "^1.0.0",
     "nunjucks": "^2.3.0",
     "request": "^2.69.0",
-    "url-regex": "^3.1.0"
+    "url-regex": "^3.1.0",
+    "uuid": "^2.0.1"
   },
   "bin": {
     "pollinate": "bin/pollinate.js"
