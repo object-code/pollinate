@@ -4,6 +4,8 @@ $ sudo npm install -g pollinate
 
 # Pollinate
 
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codingcoop/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 > **NOTE:** This project is in active development. If you like the idea
 > and want to help, awesome!
 
@@ -12,11 +14,13 @@ together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later you
 can **pollinate** them using an object of data.
 
+All templates are parsed with [Nunjucks](http://mozilla.github.io/nunjucks/)
+
 #### The `Flower`
 
 The `Flower` is a GitHub repository which holds all of the files.  Any file can
 can be passed through a template engine using the supplied data. Some files like
-the original README may need to go, and maybe a new templated README will need to 
+the original README may need to go, and maybe a new templated README will need to
 take its place. The `Flower` also supplies its own default data object.
 
 #### The `Pollen`
@@ -74,6 +78,24 @@ $ pollinate codingcoop/test-flower test.json
 }
 ```
 
+##### `PROJECT-README`
+
+```
+# {{ name }}
+```
+
+##### `Vagrantfile`
+
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "{{ box_name }}"
+  config.vm.box_url = "{{ box_url }}"
+end
+```
+
 ##### The object supplied by the `Pollen`
 
 ```
@@ -118,6 +140,24 @@ $ pollinate codingcoop/test-flower test.json
 └── codingcoop
    ├── README.md
    └── Vagrantfile
+```
+
+##### `README.md`
+
+```
+# codingcoop
+```
+
+##### `Vagrantfile`
+
+```
+# -*- mode: ruby -*-
+# vi: set ft=ruby :
+
+Vagrant.configure(2) do |config|
+  config.vm.box = "trusty64"
+  config.vm.box_url = "http://files.vagrantup.com/trusty64.box"
+end
 ```
 
 (Don't forget to jump into the directory)
