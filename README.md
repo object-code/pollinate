@@ -1,3 +1,7 @@
+```
+$ sudo npm install -g pollinate
+```
+
 # Pollinate
 
 > **NOTE:** This project is in active development. If you like the idea
