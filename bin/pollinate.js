@@ -32,8 +32,12 @@ if(program.args.length < 1) {
   process.exit(1)
 }
 
-co(function* () { return program.args })
+co(function() { return program.args })
     .then(require('../lib/fetch.js'))
-        .then(co.wrap(function* (state) {
-            console.log(state)
-        }))
+        .then(require('../lib/extend.js'))
+            .then(require('../lib/discard.js'))
+                .then(require('../lib/parse.js'))
+                    .then(require('../lib/move.js'))
+                        .then(co.wrap(function* (state) {
+                            console.log(state)
+                        }))
