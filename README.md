@@ -6,9 +6,6 @@ $ sudo npm install -g pollinate
 
 [![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/codingcoop/pollinate?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
-> **NOTE:** This project is in active development. If you like the idea
-> and want to help, awesome!
-
 Think of a tree of files as a `Flower` and a source data as `Pollen`; combined
 together they create a fertilized project. Pollinate will allow you to template
 a set of files and store them on GitHub.  When you decide to use them later you
