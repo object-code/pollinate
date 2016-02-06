@@ -42,6 +42,10 @@ or delete files during the process.
 ```
 $ pollinate codingcoop/test-flower test.json
 ```
+or
+```
+$ pollinate codingcoop/test-flower '{"name":"codingcoop","context":{"box_name":"trusty64","box_url":"http://files.vagrantup.com/trusty64.box"}}'
+```
 
 ##### The `Flower` repository
 
